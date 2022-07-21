@@ -1,0 +1,47 @@
+.input-box{
+    margin: 50px;
+    border: 2px solid red;
+    height: 250px;
+    background-image: linear-gradient(to right, rgba(11, 213, 235, 0.39), rgba(205, 30, 214, 0.409));
+    border: 0px;
+}
+
+#heading{
+    padding-left: 500px;
+    padding-top: 50px;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#input-number{
+    margin-top: 40px;
+    padding: 9px;
+    width: 300px;
+    margin-left: 200px;
+    font-size: 15px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#start-counter{
+    margin-left: 500px;
+    padding: 12px;
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    box-shadow: 0px 5px 15px white;
+    background-color: rgba(229, 229, 299, 0.90);
+    border-width: 0px;
+}
+
+.output-box{
+    background-color: rgb(75, 72, 72);
+    height: 250px;
+    width: 70%;
+    margin-left: 230px;
+}
