@@ -44,6 +44,7 @@ input::-webkit-inner-spin-button {
     height: 250px;
     width: 70%;
     margin-left: 230px;
+    position: absolute;
 }
 
 #resultDisplay{
@@ -51,16 +52,32 @@ input::-webkit-inner-spin-button {
     width: 80px;
     margin-left: 500px;
     margin-top: 70px;
-    position: absolute;
+    position: relative;
     background-color: white;
     box-shadow: 0px 2px 10px whitesmoke;
+    overflow: hidden;
 }
 
 #old-count{
     font-size: 70px;
-    padding-left: 23px;
-    padding-top: 3px;
+    padding-left: 21px;
 }
 
 #new-count{
+    font-size: 70px;
+    margin-bottom: 190px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: absolute;
+    top: 90px;
+    background-color: white;
+}
+
+@keyframes example {
+    from {top: 90px;} to {top: 0px;}
+}
+
+.animate{
+    animation-name: example;
+    animation-duration: 0.9s;
 }

@@ -4,7 +4,6 @@ var newCountTag = document.getElementById('new-count');
 
 var inputVar;
 var count = 0;
-var oldVal;
 var newVal;
 function resultFunction(){
     if(inputNumberTag.value > 9 || inputNumberTag.value < 0)
@@ -12,11 +11,16 @@ function resultFunction(){
         alert('Number provided is either greater than 9 or less than 0');
     }
     inputVar = inputNumberTag.value;
-    var interval = setInterval(function(){
-        if(count > 8){
-            clearInterval(interval);
-        }
-        oldCountTag.innerHTML = count;
-        count++;
-    },1000);
+    var interval = setInterval(animate,1000, count, inputVar);
 };
+
+function animate(){
+    if(count > inputVar - 1){
+        return;
+    }
+    newCountTag.classList.add('animate');
+    setTimeout(function(){
+        newCountTag.classList.remove('animate');
+    }, 900);
+    count++;
+}
